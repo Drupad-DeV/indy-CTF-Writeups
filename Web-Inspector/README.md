@@ -14,13 +14,16 @@
 ### Solution: 
 
 - A webpage opens up when we start the instance of the challenge
-  add image
+
 - While we inspect the webpage we see one of the flag commented inside an HTML snippet.
+
+
+
 - And on the Javascript we get the 2nd Flag
-<img src = "https://traboda-arena-36.s3.amazonaws.com/files/attachments/uartdata_d97139a4-73fd-459f-8f53-d839d0bb0aa2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6GUFVMV6HO3NYL6Z%2F20220630%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20220630T151227Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1ff845dd2cf7e20062c0ea5a0a1a9c8513c1eef287cf5e7d099bdd70eb310039">
-  
-- Firstly I converted all the 8 bit bianry to hexadecimal.
-- Then that hexadecimal to Ascii inorder to obtain the flag.
+  add image
+
+<!-- img src = "https://traboda-arena-36.s3.amazonaws.com/files/attachments/uartdata_d97139a4-73fd-459f-8f53-d839d0bb0aa2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA6GUFVMV6HO3NYL6Z%2F20220630%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20220630T151227Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=1ff845dd2cf7e20062c0ea5a0a1a9c8513c1eef287cf5e7d099bdd70eb310039">
+
 
 ```
 ictf{R128ASB}
