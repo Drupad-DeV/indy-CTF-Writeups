@@ -15,9 +15,14 @@
 
   
 - While Inspecting the website I came to know that even though we remove the Blur styling from the styling the flag was not visible on the webpage
+ ![image](https://user-images.githubusercontent.com/100958162/176995267-7f74478a-dc79-4276-8405-ba89205c5f69.png)
+
+
 - Then when I inspected each of the sources I could find the flag content in CSS.
+![image](https://user-images.githubusercontent.com/100958162/176995402-ae41fe1a-d8b9-4b8c-9687-8f607f760226.png)
+
 
 
 ```
-ictf{R128ASB}
+ictf{N4SA_H3k3r}
 ```
