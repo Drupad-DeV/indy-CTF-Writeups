@@ -1,0 +1,146 @@
+<div><img align = "right" src = "https://img.shields.io/badge/Points-298%20-informational" height = 22>
+<img align = "left" src = "https://img.shields.io/badge/Catagory-HARDWARE-informational" height = 22>
+</div
+<br>
+<div align="center"> <h1> 5niff-1t </h1> <img src = "https://img.shields.io/badge/Solved ✔️%20-brightgreen" height = 30>
+</div>
+
+## Description: 
+- Do you think finding the flag is very easy?
+
+## Hints:
+  - Analyzing stuffs are pretty interesting if we are using proper tools for it.
+
+### Solution: 
+
+- On the Attachments Section we get an file with .logicdata extention.
+- While googleing about it I came to know about an Software that can handle and analyse files with.logicdata extention
+- On opening the file on Saleae Logic 1.2.1 it had 2 diffrent signals on 2 diffrent channels.
+  
+  ![image](https://user-images.githubusercontent.com/100958162/177046394-0683eeb1-9a6d-43ab-8a5d-4fad6b20c837.png)
+
+- On using Async Serial analyzer on both the channels I was able to analyze the signals.
+  
+  ![image](https://user-images.githubusercontent.com/100958162/177046443-e35a7199-52c6-4e2a-a928-4adf548bb77a.png)
+
+- I Configured the analyzers to use decode the signal to ASCII.
+  
+  ![image](https://user-images.githubusercontent.com/100958162/177046466-5c381e38-3ca8-45f4-a331-0f0f83bf6ab4.png)
+
+- On Doing so I got a conversation that says to Change the bit rate (baud rate) form the default one to 12 times the same. i.e 12*9600 = 115200
+  ```
+0.444442000000000,H,,
+0.445494000000000,e,,
+0.446546000000000,y,,
+0.447598000000000,!,,
+0.448650000000000,' ',,
+0.449701500000000,G,,
+0.450760000000000,o,,
+0.451812000000000,o,,
+0.452864000000000,d,,
+0.453916000000000,' ',,
+0.454968000000000,t,,
+0.456020000000000,o,,
+0.457072000000000,' ',,
+0.458123500000000,s,,
+0.459176000000000,e,,
+0.460227500000000,e,,
+0.461279500000000,' ',,
+0.462331500000000,y,,
+0.463383500000000,o,,
+0.464435500000000,u,,
+0.465488000000000,!,,
+0.526736500000000,Y,,
+0.527788500000000,e,,
+0.528840500000000,s,,
+0.529893000000000,COMMA,,
+0.530944500000000,' ',,
+0.531996500000000,b,,
+0.533048500000000,u,,
+0.534100500000000,t,,
+0.535152500000000,' ',,
+0.536204500000000,t,,
+0.537256500000000,h,,
+0.538308000000000,i,,
+0.539360000000000,s,,
+0.540412500000000,' ',,
+0.541464000000000,f,,
+0.542516000000000,r,,
+0.543568000000000,e,,
+0.544620000000000,q,,
+0.545672000000000,u,,
+0.546724000000000,e,,
+0.547776000000000,n,,
+0.548828000000000,c,,
+0.549880000000000,y,,
+0.550932000000000,' ',,
+0.551984000000000,c,,
+0.553036000000000,a,,
+0.554088000000000,n,,
+0.555140000000000,',,
+0.556192000000000,t,,
+0.557244000000000,' ',,
+0.558302000000000,b,,
+0.559354000000000,y,,
+0.560406000000000,' ',,
+0.561458000000000,t,,
+0.562510000000000,r,,
+0.563562000000000,u,,
+0.564614000000000,s,,
+0.565666000000000,t,,
+0.566718000000000,e,,
+0.567770000000000,d,,
+0.568822000000000,.,,
+0.569874000000000,' ',,
+0.570925500000000,J,,
+0.571977500000000,u,,
+0.573029500000000,m,,
+0.574081500000000,p,,
+0.575133500000000,' ',,
+0.576185500000000,t,,
+0.577237500000000,o,,
+0.578289500000000,' ',,
+0.579341500000000,t,,
+0.580393500000000,h,,
+0.581445500000000,i,,
+0.582497500000000,s,,
+0.583549500000000,' ',,
+0.584601000000000,b,,
+0.585653000000000,a,,
+0.586705000000000,u,,
+0.587757000000000,d,,
+0.588809000000000,r,,
+0.589861000000000,a,,
+0.590913000000000,t,,
+0.591965000000000,e,,
+0.593017000000000,' ',,
+0.594069000000000,t,,
+0.595120500000000,i,,
+0.596172500000000,m,,
+0.597231000000000,e,,
+0.598283000000000,s,,
+0.599335000000000,' ',,
+0.600387000000000,1,,
+0.601439000000000,2,,
+0.602491000000000,!,,
+0.633630500000000,'155',,
+0.634633500000000,'251',,
+0.635636500000000,'155',,
+0.636640000000000,'147',,
+0.637643000000000,'255',,
+0.698295000000000,L,,
+0.699347000000000,a,,
+0.700399000000000,t,,
+0.701451000000000,e,,
+0.702503000000000,r,,
+0.703555000000000,!,,
+  ```
+- After changing the baud rate the flag was visible on Channel 2
+  
+![image](https://user-images.githubusercontent.com/100958162/177046502-ebbf6d3a-a27a-4c41-a18a-d086bfd6a105.png)
+  
+![image](https://user-images.githubusercontent.com/100958162/177046670-800e3496-7654-416c-a06c-26bdb4c0fb6d.png)
+
+```
+ictf{part_of_a_balanced_breakfast}
+```
