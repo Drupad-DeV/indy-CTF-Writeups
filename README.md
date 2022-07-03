@@ -13,7 +13,7 @@
 - [Noice_UART](https://github.com/Drupad-DeV/indy-CTF-Writeups/tree/main/Noice_UART)
 - [Hello_Hardware](https://github.com/Drupad-DeV/indy-CTF-Writeups/tree/main/Hello-Hardware)
 - 5niff-1t
-- Baby_IR
+- [Baby_IR](https://github.com/Drupad-DeV/indy-CTF-Writeups/tree/main/Baby_IR)
 
 ### WEB
 - [Inspeccionar_y_disfrutar](https://github.com/Drupad-DeV/indy-CTF-Writeups/tree/main/Inspeccionar_y_disfrutar)
@@ -28,7 +28,7 @@
 ### Wireless
 - [Dots&Dashes](https://github.com/Drupad-DeV/indy-CTF-Writeups/tree/main/Dots%26Dashes)
 - [4chan's Favorite](https://github.com/Drupad-DeV/indy-CTF-Writeups/tree/main/4chan's%20Favorite)
-- murphy's ghost
+- [murphy's ghost](https://github.com/Drupad-DeV/indy-CTF-Writeups/tree/main/murphy's%20ghost)
 
 ### MISC
 - [Sanity Check - 1](https://github.com/Drupad-DeV/indy-CTF-Writeups/tree/main/Sanity%20Check%201)
