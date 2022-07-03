@@ -23,12 +23,13 @@
   
   ![image](https://user-images.githubusercontent.com/100958162/177046443-e35a7199-52c6-4e2a-a928-4adf548bb77a.png)
 
-- I Configured the analyzers to use decode the signal to ASCII.
+- I Configured the analyzers to decode the signals to ASCII.
   
   ![image](https://user-images.githubusercontent.com/100958162/177046466-5c381e38-3ca8-45f4-a331-0f0f83bf6ab4.png)
 
 - On Doing so I got a conversation that says to Change the bit rate (baud rate) form the default one to 12 times the same. i.e 12*9600 = 115200
-  ```
+ 
+ ```
 0.444442000000000,H,,
 0.445494000000000,e,,
 0.446546000000000,y,,
@@ -133,13 +134,14 @@
 0.700399000000000,t,,
 0.701451000000000,e,,
 0.702503000000000,r,,
-0.703555000000000,!,,
-  ```
+0.703555000000000,!,, 
+
+```
 - After changing the baud rate the flag was visible on Channel 2
   
 ![image](https://user-images.githubusercontent.com/100958162/177046502-ebbf6d3a-a27a-4c41-a18a-d086bfd6a105.png)
   
-![image](https://user-images.githubusercontent.com/100958162/177046670-800e3496-7654-416c-a06c-26bdb4c0fb6d.png)
+![image](https://user-images.githubusercontent.com/100958162/177046810-2582c008-d1ab-4483-b87d-2fada9280502.png)
 
 ```
 ictf{part_of_a_balanced_breakfast}
